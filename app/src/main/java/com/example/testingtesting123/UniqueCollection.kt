@@ -24,11 +24,13 @@ class UniqueCollection {
 
     /** Clear all items from hte collection */
     fun clear () {
-
+        collection.clear()
+        for (item in collection) {
+            collection.remove(item)
+        }
+        collection.size == 0
     }
 
     /** Return the side of the collection */
     fun size() = collection.size
-
-
 }
